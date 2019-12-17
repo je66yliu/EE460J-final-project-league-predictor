@@ -1,0 +1,21 @@
+Row Data:
+ID				(gameId)												matchID + the Period modifier
+
+P#-Team			(participants.teamId)									100 for blue side. 200 for red side.
+P#-Champ		(participants.championId)								ID Of the champion chosen by this Participant
+P#-Lane			(participants.timeline.lane)							Participant's calculated lane. MID and BOT are legacy values. (Legal values: MID, MIDDLE, TOP, JUNGLE, BOT, BOTTOM)
+P#-Role			(participants.timeline.role)							Participant's calculated role. (Legal values: DUO, NONE, SOLO, DUO_CARRY, DUO_SUPPORT)
+P#-CS			(participants.timeline.creepsPerMinDeltas)				Creeps for a specified period.
+P#-XP			(participants.timeline.xpPerMinDeltas)					Experience change for a specified period.
+P#-Gold			(participants.timeline.goldPerMinDeltas)				Gold for a specified period.
+P#-Damage		(participants.timeline.damageTakenPerMinDeltas)			Damage taken for a specified period.
+P#-CSDiff		(participants.timeline.csDiffPerMinDeltas)				Creep score difference versus the calculated lane opponent(s) for a specified period.
+P#-XPDiff		(participants.timeline.xpDiffPerMinDeltas)				Experience difference versus the calculated lane opponent(s) for a specified period.
+P#-DamageDiff	(participants.timeline.damageTakenDiffPerMinDeltas)		Damage taken difference versus the calculated lane opponent(s) for a specified period.
+
+Period			(participants.timeline)									The time period for this data. Always (1-10,10-20,20-30,30-40,40-50,50-60)
+Winner 			(teams.win)												B = 1, R = 0
+
+(repeat all participant data 10x for all 10 players)
+# - number between 1-10 including 1 and 10. Represents participantId
+

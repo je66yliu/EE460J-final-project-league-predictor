@@ -1,6 +1,6 @@
-# EE460J-final-project-league-predictor
+# league-predictor
 
-This code and data is for Data Science Lab (EE460J). It is a colletion of code to:
+This code and data is for Data Science Lab (EE460J). It is a collection of code to:
 1) Query the Riot API for League of Legends to gather Match data
 2) Preprocess that data into a more useable format
 3) Use that processed data to train many different machine learning models.
